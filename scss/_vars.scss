@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+//グローバル変数適宜用のファイルです。
+//ここにはcssは書かないようにしましょう。
+
+
+
+
+
+//メディアクエリ モバイルファースト
+$sp: "only screen and (max-width: 767px)";// 767px以下用（SP用）の記述
+$tablet: "only screen and (min-width: 768px)";// 768px以上用（タブレット用）の記述
+$pc: "only screen and (min-width: 980px)";// 980px以上用（PC用）の記述
+
+
+
+// Font
+$sans-serif: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$serif: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+$monospace: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
+
+
+
+//size
+$max_width:950px;
+$main_width:710px;
+$side_width:220px;
+
+
+
+//color
+$text_color:#333;
+$link_color:#333;
+$hover_color:lighten( $link_color, 30% );
+$key_color:#FEB951;
+$border_color:#E8E8E8;
+$cssicon_color:#333;
+$btn_color:#333;
+
+//animation
+$animation_default:all 300ms ease-in-out;
+
+
+
+//path
+$img_path:'../img/';

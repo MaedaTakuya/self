@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+//各パーシャルファイルを読み込んで最終出力するファイルです。
+//このファイルのみCSSとしてコンパイルされます。
+//ここにはcssは書かないようにしましょう。
+//※ただし、Webフォント等でcssの@importルールが必要な場合はここに記述しましょう。
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+@import "vars";//変数適宜ファイル
+@import "main";//メインのcssはここに記述します。

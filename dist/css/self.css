@@ -1,0 +1,350 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+@charset 'UTF-8';
+html
+{
+    font-size: 62.5%;
+}
+
+body *
+{
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-weight: 300;
+
+    letter-spacing: .2em;
+}
+
+.header__logo
+{
+    font-size: 40px;
+    font-size: 4rem; 
+    font-weight: 200;
+
+    margin: 5% auto 4% auto;
+
+    text-align: center;
+    letter-spacing: .1em;
+}
+.header__logo a,
+.header__logo a:hover,
+.header__logo a:focus
+{
+    text-decoration: none; 
+
+    color: inherit;
+    outline: none;
+}
+
+.header__nav
+{
+    margin-bottom: 2%;
+}
+.header__nav ul
+{
+    padding: 0; 
+
+    text-align: center;
+}
+.header__nav li
+{
+    font-size: 13px;
+    font-size: 1.3rem;
+
+    display: inline-block;
+
+    width: 25%; 
+
+    list-style: none;
+}
+.header__nav a
+{
+    display: inline-block;
+
+    padding: 4% 0;
+
+    transition: .4s; 
+
+    color: inherit;
+}
+.header__nav a:hover,
+.header__nav a:focus
+{
+    text-decoration: none; 
+
+    color: #a6beb2;
+    outline: none;
+}
+
+.header__img
+{
+    width: 100%;
+    height: auto;
+}
+
+.about
+{
+    padding: 5% 0 2% 0; 
+
+    background: url(../image/bg01.png);
+}
+.about img
+{
+    width: 100%;
+    height: auto;
+}
+
+.about__service ul
+{
+    zoom: 1;
+
+    padding: 0; 
+
+    list-style: none;
+}
+.about__service ul:after
+{
+    display: block;
+    clear: both; 
+
+    content: '';
+}
+
+.about__service li
+{
+    float: left; 
+
+    width: 50%;
+}
+
+.about__subhead
+{
+    font-size: 13px;
+    font-size: 1.3rem;
+
+    margin: 2% 0 4% 0; 
+
+    text-align: center;
+}
+
+.works
+{
+    padding: 5% 0 2% 0;
+}
+.works [class*='col-']
+{
+    margin-bottom: 30px;
+}
+.works img
+{
+    width: 100%;
+    height: auto;
+}
+
+.js-effect
+{
+    transition: 1s;
+}
+
+.works__heading
+{
+    font-size: 20px;
+    font-size: 2rem; 
+    font-weight: 200;
+
+    margin: 0 0 4% 0;
+
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+.works__title
+{
+    font-size: 15px;
+    font-size: 1.5rem; 
+
+    margin: 2% 0 2% 0;
+    padding-bottom: .2em;
+
+    border-bottom: 1px solid #666;
+}
+
+.contact
+{
+    padding: 5% 0; 
+
+    background: url(../image/bg02.png);
+}
+.contact .container
+{
+    width: 90%;
+}
+
+.contact__heading
+{
+    font-size: 20px;
+    font-size: 2rem; 
+    font-weight: 200;
+
+    margin: 0 0 4% 0;
+
+    text-align: center;
+    letter-spacing: .1em;
+
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px){
+    .header__logo{
+        font-size: 6rem;
+        margin: 30px auto 20px auto;
+    }
+    .header__nav li{
+        font-size: 1.8rem;
+        width: 18%;
+    }
+    .header__nav a:before,
+    .header__nav a:after{
+        display: inline-block;
+        transition: .4s;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    .header__nav a:before{
+        margin-right: 10px;
+        content: '“';
+        -webkit-transform: translateX(1em);
+            -ms-transform: translateX(1em);
+                transform: translateX(1em);
+    }
+    .header__nav a:after{
+        margin-left: 10px;
+        content: '”';
+        -webkit-transform: translateX(-1em);
+            -ms-transform: translateX(-1em);
+                transform: translateX(-1em);
+    }
+    .header__nav a:hover:before,
+    .header__nav a:hover:after,
+    .header__nav a:focus:before,
+    .header__nav a:focus:after{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+        filter: alpha(opacity=100);
+        color: #a6beb2;
+    }
+    .about{
+        padding: 30px 0 20px 0;
+    }
+    .about__subhead{
+        font-size: 1.8rem;
+        margin: 1em 0 0 0;
+    }
+    .works{
+        padding: 30px 0 20px 0;
+    }
+    .works__heading{
+        font-size: 3rem;
+        margin: 0 0 20px 0;
+    }
+    .works__title{
+        font-size: 1.8rem;
+        margin: 2% 0 2% 0;
+    }
+    .contact{
+        padding: 30px 0;
+    }
+    .contact .container{
+        width: 70%;
+    }
+    .contact__heading{
+        font-size: 3rem;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media only screen and (min-width: 980px){
+    .header__logo{
+        font-size: 8rem;
+        margin: 50px auto 40px auto;
+    }
+    .header__nav li{
+        font-size: 1.8rem;
+        width: 14%;
+    }
+    .about{
+        padding: 50px 0;
+    }
+    .works{
+        padding: 50px 0;
+    }
+    .works figure{
+        position: relative;
+        overflow: hidden;
+    }
+    .works figcaption{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        background: rgba(0, 0, 0, .5);
+    }
+    .works figcaption .works__title,
+    .works figcaption .works__discription{
+        position: absolute;
+        left: -100%;
+        width: 90%;
+        transition: .3s;
+    }
+    .works figcaption .works__title{
+        top: 30px;
+    }
+    .works figcaption .works__discription{
+        top: 75px;
+    }
+    .works figure:hover figcaption{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .works figure:hover figcaption .works__title,
+    .works figure:hover figcaption .works__discription{
+        left: 20px;
+    }
+    .works figure:hover figcaption .works__title{
+        transition-delay: .2s;
+    }
+    .works figure:hover figcaption .works__discription{
+        transition-delay: .5s;
+    }
+    .works__heading{
+        font-size: 4rem;
+        margin: 0 0 25px 0;
+    }
+    .works__title{
+        font-size: 2rem;
+        margin: 0 0 25px 0;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .works__discription{
+        color: #fff;
+    }
+    .contact{
+        padding: 50px 0;
+    }
+    .contact .container{
+        width: 30%;
+    }
+    .contact__heading{
+        font-size: 4rem;
+        margin: 0 0 25px 0;
+        color: #fff;
+    }
+}
