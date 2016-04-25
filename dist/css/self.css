@@ -42,6 +42,8 @@ body *
 }
 .header__nav ul
 {
+    font-size: 0;
+
     padding: 0; 
 
     text-align: center;

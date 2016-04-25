@@ -72,6 +72,7 @@ body *{
 .header__nav{
 	margin-bottom: 2%;
 	ul{
+		font-size: 0;//display: inline-block;で生じる隙間を消すハック
 		text-align: center;
 		padding: 0;
 	}
